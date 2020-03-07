@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Jay Skript and the Domsters</title>
+    <link rel="stylesheet" href="styles/basic.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.gif" alt="">
+        <nav>
+            <ul>
+                <li><a href="index.html">index</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="photos.html">photos</a></li>
+                <li><a href="live.html">live</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+            <h1>Contact the band</h1>
+            <!-- <form action="提交地址" method="提交方式">表单内容</form> -->
+            <form method="post" action="submit.html">
+                <fieldset><!-- 定义了一组相关的表单元素，并使用外框包含起来 -->
+                    <p>
+                        <label for="name">Name:</label>
+                        <!-- "for" 属性可把 label 绑定到另外一个元素。请把 "for" 属性的值设置为相关元素的 id 属性的值 -->
+                        <input type="text" name="name" id="name" value="Your name" required="required" class="grey" />
+                    </p>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" value="Your email address" required="required" class="grey"/>
+                    </p>
+                    <p>
+                        <label for="message">Message:</label>
+                        <textarea cols="45" rows="7" id="message" name="message" required="required" class="grey">Write your message here.</textarea>
+                    </p>
+                    <input type="submit" value="send"/>
+
+                </fieldset>
+            </form>
+    </article>
+    <script src="scripts/global.js"></script>
+</body>
+
+</html>
